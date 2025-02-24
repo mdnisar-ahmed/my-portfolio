@@ -23,7 +23,9 @@ export default function Contact() {
           <div className="flex flex-col md:flex-row gap-8">
             <div className="md:w-1/2">
               <h3 className="text-2xl font-semibold mb-4">Get in Touch</h3>
-              <p className="mb-4">Feel free to reach out for any inquiries or collaborations.</p>
+              <p className="mb-4">
+                Feel free to reach out for any inquiries or collaborations.
+              </p>
               <div className="flex space-x-4 mb-6">
                 <a
                   href="https://github.com/mdnisar-ahmed"
@@ -50,7 +52,9 @@ export default function Contact() {
                   <FaTwitter size={24} />
                 </a> */}
               </div>
-              <p>Email: <u>mdnisar.ahmed@hotmail.com</u></p>
+              <p>
+                Email: <u>mdnisar.ahmed@hotmail.com</u>
+              </p>
               <p>Address: Overland Park, Kansas, USA</p>
             </div>
             <div className="md:w-1/2">
@@ -62,7 +66,18 @@ export default function Contact() {
                   <Input name="email" type="email" label="Email" required />
                 </div>
                 <div className="mb-4">
-                  <Input name="message" label="Message" textarea={true} required />
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-gray-700"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="mt-1 p-2 w-full border rounded-md"
+                    required
+                  />
                 </div>
                 <div className="mt-4">
                   <Button type="submit" themeColor="primary">
@@ -70,10 +85,14 @@ export default function Contact() {
                   </Button>
                 </div>
                 {status === "success" && (
-                  <p className="mt-4 text-green-600 dark:text-green-400">Message sent successfully!</p>
+                  <p className="mt-4 text-green-600 dark:text-green-400">
+                    Message sent successfully!
+                  </p>
                 )}
                 {status === "error" && (
-                  <p className="mt-4 text-red-600 dark:text-red-400">Failed to send message. Please try again.</p>
+                  <p className="mt-4 text-red-600 dark:text-red-400">
+                    Failed to send message. Please try again.
+                  </p>
                 )}
               </form>
             </div>
@@ -81,6 +100,6 @@ export default function Contact() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
