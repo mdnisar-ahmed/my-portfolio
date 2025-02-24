@@ -15,7 +15,7 @@ export default function Page() {
         <About />
         <Experience />
         <Education />
-        <Projects />
+        {/* <Projects /> */}
         <Contact />
       </main>
     </div>

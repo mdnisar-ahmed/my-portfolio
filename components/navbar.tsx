@@ -59,14 +59,14 @@ export default function Navbar() {
               </Link>
             )}
           />
-          <MenuItem
+          {/* <MenuItem
             text="Projects"
             render={() => (
               <Link href="#projects" className="k-item k-menu-link">
                 Projects
               </Link>
             )}
-          />
+          /> */}
           <MenuItem
             text="Contact"
             render={() => (
