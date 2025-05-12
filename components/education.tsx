@@ -15,7 +15,7 @@ const educationData = [
     title: "Bachelor's Degree",
     subtitle: "Chaitanya Bharathi Institute of Technology",
     description:
-      "Bachelor of Engineering in Electronics and Communications",
+      "Bachelor of Engineering in Computer Science",
   }
 ]
 

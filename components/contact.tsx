@@ -53,9 +53,9 @@ export default function Contact() {
                 </a> */}
               </div>
               <p>
-                Email: <u>mdnisar.ahmed@hotmail.com</u>
+                Email: <u>mnisarahmed356@gmail.com</u>
               </p>
-              <p>Address: Overland Park, Kansas, USA</p>
+              <p>Address: Omaha, Nebraska, USA</p>
             </div>
             <div className="md:w-1/2">
               <form action={handleSubmit}>
